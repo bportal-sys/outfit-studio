@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "outfit-studio"
+version = "0.1.0"
+description = "A real-time webcam image capture and pose estimation tool meant to be used with apple's camera continuity"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "APACHE-2.0"
+license-files = ["LICENSE"]
+authors = [
+    { name = "B", email = "fromdigitalsuccess@gmail.com" }
+]
+dependencies = [
+    "ultralytics",
+    "opencv-python"
+]
+
+[project.scripts]
+outfitstudio-start = "outfitstudio:start"
